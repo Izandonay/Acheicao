@@ -7,7 +7,7 @@ body {
 
 .container {
     margin: 10px auto;
-    max-width: 400px;
+    max-width: 100%;
     background: #fff;
     border: 1px solid #d9d9d9;
     box-shadow: 0 2px 8px #0001;
@@ -52,13 +52,14 @@ body {
     margin: 0 0 15px 0;
     font-weight: normal;
     line-height: 1.2;
-    font-size: 1.15em;
+    font-size: 1.5em;
 }
 
 .banner-btn {
     background: #4ea43b;
     color: #fff;
-    border: none;
+    border: 1;
+    border-block-color:;
     padding: 8px 16px;
     border-radius: 3px;
     font-size: 1em;
