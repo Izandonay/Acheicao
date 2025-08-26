@@ -5,8 +5,8 @@
 }
 
 .PLACEHOLDERDOG{
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background-color: var(--verdebonuito);
 }
 
@@ -93,7 +93,14 @@ body {
 }
 
 .recent-block {
-    width: 48%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent-block2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
