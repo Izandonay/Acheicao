@@ -83,6 +83,15 @@ header {
     top: 0; right: 0; bottom: 0;
     object-fit: cover;
     height: 100%;
+    z-index: 9;
+}
+
+.banner-fundo {
+    width: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    object-fit: cover;
+    height: 180px;
     z-index: 1;
 }
 
@@ -206,6 +215,11 @@ header {
 
 .form select {
     min-width: 80px;
+}
+
+.datanome{
+    white-space: nowrap;
+    align-content:center
 }
 
 .form button,
