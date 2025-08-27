@@ -1,117 +1,70 @@
-<html lang="pt-br"><head>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <title>AcheiCão Araucária</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Banner -->
-        <section class="banner">
-            <div class="banner-content">
+
+<!-- BANNER -->
+    <header>
+        <div class="bancontent">
                 <h2>Perdeu ou encontrou um cão? Estamos aqui pra te ajudar.</h2>
-                <button class="banner-btn">Cadastrar meu cachorro</button>
-            </div>
+                <button>Cadastrar meu cachorro
+                </button>
+        </div>
             <img src="cachorro.png" alt="Cão feliz" class="banner-img">
-        </section>
+    </header>
 
-        <!-- Cães recentemente perdidos e encontrados -->
-        <section class="recent-section">
-            
-            
-            <div class="recent-block">
-                <button class="recent-btn">Cães recentemente perdidos</button>
+<!--CÃES PERDIDOS -->
+    <section class="vercaes">
+            <div class="caesperdidos">
+                <button>Cães recentemente perdidos
+                </button>
 
-                <div class="dogs-list">
-                    <div class="dog-card">
-                        <div class="PLACEHOLDERDOG"></div>
+                    <div class="dogs-list">
+                        <div class="dog-card">
+                            <div class="imgdog">
+                            </div>
+                            <p class="nome" >NOME</p>
+                            <p class="bairro">BAIRRO<p>
+                        </div>
 
-                            <strong>NOME</strong>
-                            <div class="dog-location">BAIRRO</div>
-                    </div>
-                </div>
-                    
-                    <div class="dog-card">
-                       
-                        <div>
-                            <strong>NOME</strong>
-                            <div class="dog-location">BAIRRO</div>
+                        <div class="dog-card">
+                            <div class="imgdog">
+                            </div>
+                            <p class="nome" >NOME</p>
+                            <p class="bairro">BAIRRO<p>
                         </div>
                     </div>
-                    
             </div>
 
-                
-        </section></div>
-            <div class="recent-block">
-                <button class="recent-btn">Cães encontrados aguardando reencontro</button>
-                <div class="dogs-list">
-                    <div class="dog-card">
-                        <div>
-                            <strong>NOME</strong>
-                            <div class="dog-location">BAIRRO</div>
+            <div class="caesadocao">
+                <button class="recent-btn">Cães encontrados aguardando reencontro
+                </button>
+
+                    <div class="dogs-list">
+                        <div class="dog-card">
+                            <div class="imgdog">
+                            </div>
+                            <p class="nome" >NOME</p>
+                            <p class="bairro">BAIRRO<p>
+                        </div>
+
+                        <div class="dog-card">
+                            <div class="imgdog">
+                            </div>
+                            <p class="nome" >NOME</p>
+                            <p class="bairro">BAIRRO<p>
                         </div>
                     </div>
-                    <div class="dog-card">
-                        <div>
-                            <strong>NOME</strong>
-                            <div class="dog-location">BAIRRO</div>
-                        </div>
-                    </div>
-                </div>
             </div>
+    </section>
 
-        
+<!-- Busca rápida com filtros -->
+    <section class="busca">
+        <h3>Busca rápida com filtros</h3>
 
-        <!-- Busca rápida com filtros -->
-        <section class="search-section">
-            <h3>Busca rápida com filtros</h3>
-            <form class="filter-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Bairro">
-                    <input type="text" placeholder="Raça">
-                </div>
-                <div class="form-row">
-                    <select>
-                        <option>Porte</option>
-                        <option>Pequeno</option>
-                        <option>Médio</option>
-                        <option>Grande</option>
-                    </select>
-                    <input type="text" placeholder="Cor">
-                </div>
-                <div class="form-row">
-                    <input type="date" placeholder="Data do desaparecimento">
-                </div>
-                <button type="submit" class="search-btn">Buscar</button>
-            </form>
-        </section>
-
-        <!-- Rodapé -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Map_of_Brazil_with_flag.png" alt="Mapa PR" class="map-icon">
-                    <div>
-                        <span class="footer-title">AcheiCão</span>
-                        <div class="footer-subtitle">ARAUCÁRIA</div>
-                    </div>
-                </div>
-                <div class="footer-icons">
-                    <div class="footer-icon">
-                        <span class="icon">🏠</span>
-                        <span>Início</span>
-                    </div>
-                    <div class="footer-icon">
-                        <span class="icon">📞</span>
-                        <span>Contato</span>
-                    </div>
-                    <div class="footer-icon">
-                        <span class="icon">👤</span>
-                        <span>Eu</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-
-</body></html>
+            <form class="form">
+                        <span class="footer-title">Achei Cão</span>
