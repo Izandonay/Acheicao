@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Animal</title>
+    <link rel="stylesheet" href="cadastrar-animal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="voltar"><span class="arrow">&#8592;</span></a>
+        </header>
+        <main>
+            <h1>Cadastrar Animal</h1>
+            <p class="descricao">
+                Preencha o formulário abaixo para cadastrar um<br>
+                cão perdido ou encontrado
+            </p>
+            <form>
+                <label class="foto-label">
+                    <input type="file" name="foto" accept="image/*" hidden>
+                    <div class="foto-placeholder">
+                        + Enviar foto
+                    </div>
+                </label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome do Animal</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option>Cão perdido</option>
+                            <option>Cão encontrado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data do Desaparecimento</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="porte">Porte</label>
+                        <select id="porte" name="porte">
+                            <option>Pequeno</option>
+                            <option>Médio</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cor">Cor</label>
+                        <input type="text" id="cor" name="cor">
+                    </div>
+                </div>
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            </form>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Mapa" class="logo-map">
+                    <div>
+                        <div class="footer-title">AcheiCão</div>
+                        <div class="footer-subtitle">ARAUCÁRIA</div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-item">
+                        <img src="home-icon.png" alt="Início">
+                        <span>Início</span>
+                    </div>
+                    <div class="footer-item">
+                        <img src="contact-icon.png" alt="Contato">
+                        <span>Contato</span>
+                    </div>
+                    <div class="footer-item">
+                        <img src="user-icon.png" alt="Eu">
+                        <span>Eu</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
