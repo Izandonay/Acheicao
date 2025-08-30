@@ -1,153 +1,186 @@
-body {
+/* Reset e base */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    font-family: 'Georgia', serif;
+    box-sizing: border-box;
 }
 
+body {
+    background: #f4f4f4;
+    font-family: 'Georgia', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
 .container {
-    max-width: 375px;
-    margin: 8px auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: #eef8db;
     min-height: 97vh;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Cabeçalho */
 header {
-    padding: 16px 0 0 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .back-arrow {
     color: #222;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.8rem;
+    transition: color 0.3s;
 }
 
+.back-arrow:hover {
+    color: #6ab142;
+}
+
+/* Conteúdo principal */
 main {
-    padding: 0 32px 0 32px;
     flex: 1;
+    padding: 1.5rem;
 }
 
 .success-icon {
     background: #c6ef8c;
     color: #4c772d;
-    width: 42px;
-    height: 42px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    margin-top: 10px;
-    margin-right: 10px;
-    vertical-align: middle;
+    font-size: 2rem;
+    margin: 1rem 1rem 0 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h1 {
-    display: inline;
+    display: inline-block;
     color: #4c772d;
-    font-size: 2rem;
-    font-weight: normal;
-    margin-left: 8px;
-    vertical-align: middle;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
 }
 
 .description {
-    margin-top: 24px;
-    color: #333;
-    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    max-width: 800px;
 }
 
+/* Seção de informações */
 .animal-info {
     display: flex;
-    margin-top: 20px;
+    margin-top: 2rem;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .animal-photo {
-    width: 95px;
-    height: 95px;
+    width: 220px;
+    height: 220px;
     background: #fff;
-    border: 2px solid #333;
-    margin-right: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    flex-shrink: 0;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .animal-fields {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 1rem;
+    min-width: 200px;
 }
 
 label {
     font-size: 1rem;
+    font-weight: 500;
     color: #2b2b2b;
-    margin-top: 12px;
-    display: block;
 }
 
 input[type="text"] {
     width: 100%;
-    border: none;
-    border-radius: 12px;
-    padding: 6px 10px;
-    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
     background: #fff;
     color: #555;
-    box-sizing: border-box;
     font-size: 1rem;
     outline: none;
     pointer-events: none;
 }
 
+/* Rodapé */
 footer {
     background: #6ab142;
     width: 100%;
-    padding: 0;
-    margin-top: 32px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    margin-top: 2rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
 }
 
 .footer-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 24px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    text-align: center;
 }
 
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+/* Logo */
 .logo-section {
     display: flex;
     align-items: center;
 }
 
 .footer-logo {
-    width: 38px;
-    height: 38px;
-    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+    margin-right: 0.8rem;
 }
 
 .brand {
     color: #fff;
-    font-size: 1.15rem;
-    font-family: 'Georgia', serif;
-    font-weight: 500;
-    letter-spacing: .5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .city {
-    color: #fff;
-    font-size: 0.85rem;
-    font-family: 'Georgia', serif;
-    letter-spacing: 1px;
+    color: #e8f5e9;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
+/* Navegação no rodapé */
 nav {
     display: flex;
-    gap: 18px;
+    gap: 1.5rem;
 }
 
 .footer-link {
@@ -155,11 +188,16 @@ nav {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    font-size: .95rem;
+    font-size: 0.95rem;
     text-decoration: none;
-    font-family: 'Georgia', serif;
+    transition: opacity 0.3s;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
 }
 
 .footer-link .icon {
-    font-size: 1.23rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
 }
